@@ -1,0 +1,47 @@
+.tree-node {
+    margin-left: 20px;
+}
+
+.leaf-node {
+    margin-left: 40px;
+}
+
+.head-item {
+    cursor: pointer;
+    list-style: none;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.slideIn {
+    animation-name: slideIn;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.slideOut {
+    animation-name: slideOut;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.item-price {
+    margin-left: 5px;
+    font-weight: bold;
+}
